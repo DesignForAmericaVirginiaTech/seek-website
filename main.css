@@ -10,6 +10,7 @@ body {
 .nopadding {
     margin: 0 !important;
     padding: 0 !important;
+    /*Important because I am removing default Bootstrap padding*/
 }
 
 img.logo {
@@ -21,7 +22,7 @@ img.logo {
 
 #stripes {
     width: 100%;
-    height: 25vh;
+    height: 25%;
     position: absolute;
     z-index: -1;
     top: 0;
