@@ -22,7 +22,7 @@ img.logo {
 
 #stripes {
     width: 100%;
-    height: 25%;
+    height: 27%;
     position: absolute;
     z-index: -1;
     top: 0;
@@ -51,7 +51,7 @@ img.logo {
 }
 
 li:hover {
-    background-color: #0000FF;
+    background-color: #465298;
 }
 
 #bottom-links {
