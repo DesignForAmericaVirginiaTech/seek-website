@@ -1,4 +1,4 @@
-Parse.initialize("ni4fDAUMR7GIrlUSN86APVmlrQt91a4UXO78tkyE", "Seo4pAZ0TpUIKQ7alkK4lamSCjINtXJJT2D5zpQ5");
+Parse.initialize("csMOVllLLOUIenFmTG1oH6ayhdinQnWpYr0VwGIx", "soFGuQMj57zBvU6PFHHJQxL05kcQWEV90QWmLJId");
 
 var locations = [];
 
@@ -25,7 +25,7 @@ function initialize() {
 	var mapCanvas = document.getElementById('map_canvas');
 	var mapOptions = {
 	  center: new google.maps.LatLng(37.2303918, -80.4218075),
-	  zoom: 15,
+	  zoom: 13,
 	  mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
 	var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -38,3 +38,9 @@ function initialize() {
 		});
 	}
 }
+
+$(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});

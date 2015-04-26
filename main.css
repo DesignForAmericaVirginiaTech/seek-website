@@ -1,69 +1,121 @@
 body {
-    background-color: #000080;
+  padding-top: 70px;  
+}
+
+.content {
+    margin-left: 0 !important;
+    margin-top: -10px;
+}
+
+#main {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+}
+
+.navbar {
+    background-color: #009688;
+    border: 0 solid #FFC107;
+    border-bottom-width: 10px;
+    margin-bottom: 0 !important;
+    /*drop shadow*/
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.53);
+    -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.53);
+    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.53);
+}
+
+.navbar-toggle span {
+    background-color: #FFFFFF;
+}
+
+#page-title {
+    color: #FFFFFF;
+    font-size: 180%;
+}
+
+#sidebar {
+    height: 100vh;
+    border: 0 solid #CCCCCC;
+    border-right-width: 1px;
+}
+
+#sidebar .nav {
+    position: fixed;
+}
+
+#sidebar li {
+    padding-top: 20px;
+    width: 100%;
+}
+
+#sidebar a:hover {
+    background-color: #FFFFFF;
+}
+
+#sidebar a {
+    width: 100%;
+    color: black;
+    font-weight: bold;
+}
+
+#sidebar .active a {
+    color: #009688;
+}
+
+/* collapsed sidebar styles */
+@media screen and (max-width: 767px) {
+    .navbar-toggle {
+        position: fixed;
+        left:0;
+    }
+
+    #page-title {
+        margin-left: 50px;
+    }
+
+    .row-offcanvas {
+        position: relative;
+    }
+
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+        right: -50%;
+    }
+
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+        left: -50%;
+    }
+
+    .row-offcanvas-right.active {
+        right: 50%;
+    }
+
+    .row-offcanvas-left.active {
+        left: 50%;
+    }
+
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: 50%;
+    }
+
+    #sidebar {
+        padding-top:0;
+    }
+
+    #map_canvas {
+        display: none;
+    }
+}
+
+h1 {
+    margin-top: 0;
 }
 
 #map_canvas {
-	width: 100%;
-	height: 100vh;
-}
-
-.nopadding {
-    margin: 0 !important;
-    padding: 0 !important;
-    /*Important because I am removing default Bootstrap padding*/
-}
-
-img.logo {
-    width: 50%;
-    margin: 25%;
-    border: 2px solid white;
-    border-radius: 10px;
-}
-
-#stripes {
+    margin: 5%;
     width: 100%;
-    height: 27%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    background: repeating-linear-gradient(
-        45deg,
-        #606dbc,
-        #606dbc 10px,
-        #465298 10px,
-        #465298 20px
-    );
-}
-
-.sidebar-list {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-}
-
-.sidebar-list li {
-    padding: 5px;
-    font-family: "Verdana", sans-serif;
-    font-size: 150%;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-li:hover {
-    background-color: #465298;
-}
-
-#bottom-links {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-}
-
-#bottom-links li {
-    padding: 5px;
-    font-family: "Verdana", sans-serif;
-    font-size: 75%;
-    color: #FFFFFF;
-    text-align: center;
+    height: 80vh;
 }
