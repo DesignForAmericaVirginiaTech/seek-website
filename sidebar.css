@@ -44,8 +44,13 @@ body {
 }
 
 #sidebar li {
-    padding-top: 20px;
+    padding-left: 10px;
     width: 100%;
+}
+
+#sidebar .big {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #sidebar a:hover {
@@ -63,7 +68,10 @@ body {
 }
 
 #sidebar .seperator {
-    margin-bottom: 80px;
+    margin-bottom: 10px;
+    height: 0;
+    border: 0 solid #CCCCCC;
+    border-top-width: 1px;
 }
 
 #sidebar .little a {
