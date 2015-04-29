@@ -8,9 +8,9 @@ body {
 }
 
 #main {
-    padding-left: 5%;
+    /*padding-left: 5%;
     padding-right: 5%;
-    padding-top: 20px;
+    padding-top: 20px;*/
 }
 
 .navbar {
@@ -34,6 +34,8 @@ body {
 }
 
 #sidebar .nav {
+    background-color: white;
+    z-index: 999;
     height: 100vh;
     border: 0 solid #CCCCCC;
     border-right-width: 1px;
