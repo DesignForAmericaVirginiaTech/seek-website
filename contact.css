@@ -5,6 +5,10 @@ h1 {
 #main {
 }
 
+.information {
+	padding: 2%;
+}
+
 .title {
 	text-align: center;
 	padding-bottom: 5px;
@@ -20,10 +24,21 @@ h1 {
 	margin-bottom: 10px;
 }
 
+.icon-row {
+	text-align: center;
+}
+
+.icon-wrapper {
+	min-width: 350px;
+	max-width: 0;
+	margin: auto;
+}
+
 .icon {
-	width: 30px;
-	height: 30px;
-	padding-left: 2%;
+	min-width: 150px;
+	max-width: 15%;
+	height: auto;
+	padding: 1%;
 }
 
 .link {
